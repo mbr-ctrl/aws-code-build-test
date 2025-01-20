@@ -4,20 +4,19 @@ phases:
   install:
     runtime-versions:
       python: 3.8
-  commands:
-    - echo "Installing dependencies..."
+    commands:
+    - echo Installing dependencies...
     - pip install -r requirements.txt
-    - echo "Dependencies installed."
   pre_build:
     commands:
-      - echo "Start Pre-build and end"
+      - echo Start Pre-build and end
   build:
     commands:
-      - echo "Running tests..."
+      - echo Running tests...
       - pytest --junitxml=reports/junit.xml --tb=short
   post_build:
     commands:
-      - echo "Build completed on successfully"
+      - echo Build completed on successfully
 
 artifacts:
   files:
