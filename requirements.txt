@@ -1,0 +1,2 @@
+pytest
+pytest-cov # Pour gerer les rapports de couverture de code
